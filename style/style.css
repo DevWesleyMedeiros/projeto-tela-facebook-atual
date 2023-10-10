@@ -106,5 +106,36 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
+@media screen and (max-width: 768px){
+    main{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.logo{
+        width: 100vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    div.logo img{
+        padding: 0 2rem;
+        text-align: center;
+    }
+    div.logo h2{
+        text-align: start;
+        padding: 2rem 2rem;
+        margin-top: 1.5rem;
+    }
+    div.form_login{
+        width: 100vw;
+    }
+    div.form_login form{
+        width: 100%;
+        padding: 0 2rem;
+        margin-top: 5px;
+    }
+}
 
