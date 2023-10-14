@@ -17,7 +17,7 @@ main{
     padding: 0 10rem;
 }
 div.logo{
-    width: 50%;
+    width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,8 @@ div.logo img{
     height: 30%;
     position: absolute;
     top: 0%;
-    left: -20%;
+    left: 50%;
+    transform: translate(-50%);
 }
 div.logo h2{
     text-align: left;
@@ -69,7 +70,7 @@ div.form_login > form > input{
     outline: none;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-    cursor: pointer;
+    cursor: text;
 }
 div.form_login input{
     margin-top: 0.5rem;
@@ -98,44 +99,18 @@ div.form_login > form > button.create_acount{
     font-weight: 800;
     font-size: larger;
     cursor: pointer;
+    transition: 1s;
 }
-a{
+div.form_login > form > button.create_acount:hover{
+    background-color: #3ace18;
+}
+div.form_login > form > a{
     text-decoration: none;
     margin-top: 1.5rem;
+    transition: 1s;
 }
-a:hover{
+div.form_login > form > a:hover{
     text-decoration: underline;
 }
-@media screen and (max-width: 768px){
-    main{
-        width: 80%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    div.logo{
-        width: 100vw;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 2rem 0;
-    }
-    div.logo img{
-        padding: 0 2rem;
-        text-align: center;
-    }
-    div.logo h2{
-        text-align: start;
-        padding: 2rem 2rem;
-        margin-top: 1.5rem;
-    }
-    div.form_login{
-        width: 100vw;
-    }
-    div.form_login form{
-        width: 100%;
-        padding: 0 2rem;
-        margin-top: 5px;
-    }
-}
+
 
